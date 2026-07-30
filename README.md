@@ -7,6 +7,8 @@ Hoje sou estagiário de **Dados e Governança na Secretaria de Educação do DF*
 
 Formo em **Análise e Desenvolvimento de Sistemas (UDF) em dezembro de 2026** e busco oportunidade como **Desenvolvedor Júnior** ou na área de **Dados**.
 
+### 🌐 Portfólio completo: **[thiagosimao99.github.io](https://thiagosimao99.github.io/)**
+
 ---
 
 ## 🏢 O que eu faço na SEEDF
@@ -98,6 +100,7 @@ Python Essentials (Cisco) · Python (Udemy) · Git e GitHub · GitHub Actions CI
 
 ## 📫 Contato
 
+[![Portfólio](https://img.shields.io/badge/Portf%C3%B3lio-38BDF8?style=for-the-badge&logo=googlechrome&logoColor=white)](https://thiagosimao99.github.io/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/thiagosimao-dev)
 [![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:tvsimao2005@gmail.com)
 
