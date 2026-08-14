@@ -3,7 +3,7 @@
 **Desenvolvedor Full-Stack** (Python · Django · React) e **Analytics Engineer em formação** (SQL · dbt · Airflow).
 Brasília, DF 🇧🇷
 
-Hoje sou estagiário de **Dados e Governança na Secretaria de Educação do DF**, onde trabalho num Data Warehouse que atende **400 mil alunos**. Em paralelo, desenvolvo aplicações web para clientes reais — dois sites meus estão no ar e em uso agora.
+Hoje sou estagiário de **Dados e Governança na Secretaria de Educação do DF**, onde trabalho num Data Warehouse que atende **400 mil alunos**. Em paralelo, desenvolvo aplicações web para clientes reais — **três sites meus estão no ar e em uso agora**.
 
 Formo em **Análise e Desenvolvimento de Sistemas (UDF) em dezembro de 2026** e busco oportunidade como **Desenvolvedor Júnior** ou na área de **Dados**.
 
@@ -37,6 +37,16 @@ Açougue artesanal em Brasília. Cardápio interativo com catálogo por categori
 Academia de Muay Thai com duas unidades. Captação de leads por WhatsApp, galeria e integração com Google Maps.
 **React 19 · Vite · Docker · Nginx · GitHub Actions** — *deploy automático:* o merge do PR na `main` dispara build e sobe o container na VPS por SSH
 
+### 🛋️ [Brito Móveis](https://britomoveisnovoseusados.com)
+Loja de móveis novos e usados. Catálogo com busca e filtro por categoria e preço, portal de avaliação de móvel usado e formulário de encomenda. A cliente gerencia o catálogo por um painel administrativo, sem depender de mim para publicar produto.
+**React 19 · Tailwind v4 · PocketBase · Docker · Nginx · GitHub Actions · Certbot**
+
+### 🔧 A infraestrutura por trás dos três
+
+Os três rodam na **mesma VPS Linux**, atrás de **um único proxy reverso Nginx** que termina TLS para os três domínios com Let's Encrypt e roteia cada requisição para o container certo.
+
+No Brito o roteamento é **por caminho**: `/api/` e `/_/` vão para o PocketBase e `/` para o build do React — tudo no mesmo domínio, sem CORS. O **banco não expõe porta pública**: só é alcançável pela rede interna do Docker, através do proxy. Os containers têm **healthcheck, limite de memória e CPU, e rotação de logs**.
+
 ---
 
 ## 🛠️ Projetos em finalização
@@ -60,8 +70,6 @@ Loja completa de perfumes importados, do carrinho ao rastreio do pedido.
 ---
 
 ## 🌱 Também em desenvolvimento
-
-**Brito Móveis** — catálogo de móveis novos e usados, com portal de avaliação de usado e formulário de encomenda. Já implantado, em fase de carga do catálogo pelo cliente · *React 19 · Tailwind v4 · PocketBase · Docker · GitHub Actions*
 
 **Melhor Amigo** — clínica veterinária e pet shop · *React 19 · Vite · React Router v7*
 
@@ -92,7 +100,7 @@ Loja completa de perfumes importados, do carrinho ao rastreio do pedido.
 **Análise e Desenvolvimento de Sistemas** — UDF Centro Universitário · conclusão em Dez/2026
 **Técnico em TI** — CEMIC · concluído em 2022
 
-Python Essentials (Cisco) · Python (Udemy) · Git e GitHub · GitHub Actions CI/CD · DevOps: Terraform, Kubernetes, Ansible · Inteligência Artificial (Coursera + Udemy)
+Python Essentials 1 (Cisco) · Introdução ao Git e GitHub (FGV Online) · GitHub Actions CI/CD (Udemy) · DevOps: Terraform, Kubernetes, Ansible, AWS e Azure (Udemy) · Python do Zero ao Avançado (Udemy) · Crie Agentes de IA: do Zero ao Deploy (Udemy) · Google AI Essentials (Google/Coursera)
 
 **Idiomas:** Português (nativo) · Inglês (avançado) · Espanhol (básico)
 
@@ -117,7 +125,7 @@ I'm a **Full-Stack Developer** (Python · Django · React) and **Analytics Engin
 
 I currently work as a **Data Governance intern at the Federal District Department of Education**, on a Data Warehouse serving **400,000 students** — where I cataloged 1,200+ tables in OpenMetadata, wrote 68+ technical docs across 35 dbt projects, and built staging and mart models feeding the analytics layer.
 
-Alongside that, I build web applications for real clients. Two are live in production today: [carboneiro.com.br](https://carboneiro.com.br) and [moradokmuaythai.com.br](https://moradokmuaythai.com.br).
+Alongside that, I build web applications for real clients. **Three are live in production today**: [carboneiro.com.br](https://carboneiro.com.br), [moradokmuaythai.com.br](https://moradokmuaythai.com.br) and [britomoveisnovoseusados.com](https://britomoveisnovoseusados.com) — all running on a single Linux VPS behind one Nginx reverse proxy terminating TLS for the three domains, with CI/CD via GitHub Actions.
 
 I graduate in **Systems Analysis & Development (Dec 2026)** and I'm open to **junior developer** and **data engineering** roles.
 
